@@ -122,19 +122,9 @@ if(isLogged()) {
         [ 'timestamp' => $Common_TimeNow ]
     );
 
-    if (
-        (
-            !isset($_DontCheckAccountActivation) ||
-            $_DontCheckAccountActivation != true
-        ) &&
-        $isUserBlockedByActivationRequirement
-    ) {
+    if ($isUserBlockedByActivationRequirement) {
         $_DontShowMenus = true;
-
-        message(
-            prepareActivationLockMessageHTML(),
-            $_GameConfig['game_name']
-        );
+        message($_Lang['NonActiveBlock'], $_GameConfig['game_name']);
     }
 
     $userCookieBlockadeResult = handleUserBlockadeByCookie(

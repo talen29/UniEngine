@@ -61,6 +61,7 @@ $_Lang['Chrono_PrettyTime']                     = [
 $_Lang['FatalError_PlanetRowEmpty']             = 'Critical error! Mother planet data unavailable!<br/>Please report this problem!';
 $_Lang['ServerStart_NotReached']                = 'This game server is going to be opened on <b class="lime">%s</b> at <b class="lime">%s</b>!<br/>In the meantime, you can invite other players using your referral link...';
 $_Lang['ServerIsClosed']                        = 'Game server is currently offline (disabled by Administration)!';
+$_Lang['NonActiveBlock']                        = '<b class="orange">You have to activate your account to continue your game play. Checkout your email account to find your account\'s activation link in the mail we\'ve sent to you upon registration.</b><br/>If your account will remain inactive for 7 days past the registration date, it will be automatically removed!';
 
 $_Lang['PlanetList_MoonChar']                   = 'M';
 $_Lang['PlanetList_TypeChange_Sign_M']          = 'M';
@@ -120,7 +121,6 @@ $_Lang['BattleReportReader_FatalError']         = 'A fatal error occurred while 
 $_Lang['sys_moon']                              = "Moon";
 $_Lang['sys_error']                             = "Error";
 $_Lang['sys_mess_attack_report']                = "Battle Report";
-$_Lang['sys_unknownError']                      = "Unknown error";
 
 $_Lang['sys_attacker_won']                      = "Aggressor has won the battle!";
 $_Lang['sys_defender_won']                      = "Defender has won the battle!";
@@ -205,6 +205,10 @@ $_Lang['LanguagesAvailable']    = [
     'pl'                        => [
         'flag_emoji'            => '🇵🇱',
         'name'                  => 'Polish'
+    ],
+    'it'                        => [
+        'flag_emoji'            => '🇮🇹',
+        'name'                  => 'Italiano'
     ],
 ];
 
